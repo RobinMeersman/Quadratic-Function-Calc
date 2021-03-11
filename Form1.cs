@@ -30,10 +30,10 @@ namespace funcCalc
                 // check if any box is empty...
                 if(textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "")
                 {
-                  DialogResult error = MessageBox.Show("Gelieve alles in te vullen", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                  DialogResult error = MessageBox.Show("Please fill in every box", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 } else if (int.Parse(textBox4.Text) > int.Parse(textBox5.Text))
                 {
-                    DialogResult error = MessageBox.Show("De waarde voor start moet kleiner zijn dan de waarde voor einde", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    DialogResult error = MessageBox.Show("The starting value has to be smaller than the ending value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     if(error == DialogResult.OK)
                     {
                         textBox4.Text = "";
